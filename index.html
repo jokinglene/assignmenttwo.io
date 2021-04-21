@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1 style="text-align:center; font-size: 100px; font-family:Copperplate; color:silver">Platinum Fitness
+<img src="pfs.jpg" alt="Platinum Fitness" width="300" height="300"></h1>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box
+		}
+
+		/* Set height of body and the document to 100% */
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+			font-family: Georgia;
+		}
+
+		/* Style tab links */
+		.tablink {
+			background-color: Silver;
+			color: white;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			font-size: 17px;
+			width: 25%;
+		}
+
+		.tablink:hover {
+			background-color: gainsboro;
+		}
+
+		/* Style the tab content (and add height:100% for full page content) */
+		.tabcontent {
+			color: white;
+			display: none;
+			padding: 100px 20px;
+			height: 100%;
+		}
+
+		#Home {
+			background-color: black;
+		}
+
+		#Memberships {
+			background-color: black;
+		}
+
+		#Trainers {
+			background-color: black;
+		}
+
+		#Contact {
+			background-color: black;
+		}
+	</style>
+</head>
+
+<body style="background-color:black; text-align:center">
+	<button class="tablink" onclick="openPage('Home', this, 'black')">Home</button>
+<button class="tablink" onclick="openPage('Memberships', this, 'black')">Memberships</button>
+<button class="tablink" onclick="openPage('Trainers', this, 'black')">Trainers</button>
+<button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
+
+<div id="Home" class="tabcontent">
+  <img src="front.jpg" alt="Welcome to Platinum Fitness =" width: "700px;height:700px">
+	<h2 style="text-align:center; font-family: Georgia; color: white; font-size: 70px">Where Quality builds Quality</h2>
+
+<style>
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+}
+</style>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="pull.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="training.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+  <img src="treadmill.jpg" style="width:60%">
+</div>
+
+<div class="mySlides fade">
+	<img src="weights.jpg" style="width:60%">
+</div>	
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+<span class="dot"></span> 
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<br>
+<style>
+a:link {
+  color: silver;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: silver;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: silver;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+<p style="font-size:25px; text-align: center; font-family:Georgia; color:white">Check out what our founder, Charlie Temple has to say <a href="https://downtowngallery.com.sg/journal/5-minutes-with-charlie-temple-founder-of-platinum-fitness">here...</a></p>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>	
+	<img src="charlietemple.jpg" alt="Charlie Temple" style="width:50%" class="center">
+<br>
+<iframe width="100%" height="630" src="https://www.youtube.com/embed/OUN5zSK0_IM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>	
+</body>
+</div>
+
+<div id="Memberships" class="tabcontent">
+<h2 style="text-align:center; font-family: Georgia; color: white; font-size: 50px">Memberships</h2>
+<h3 style="text-align:center; font-family:Georgia; color:white; font-size:35px">
+Single month membership - $180
+<br>
+3 months membership - $170 per month
+<br>
+6 months membership - $150 per month
+<br>
+12 months membership - $109 per month
+<br>
+12 months membership (full payment) - $1308 <b> + 1 FREE MONTH! </b>
+<br>
+Corporate 12M membership - $99 per month (Min. 5 pax sign-up)
+<br>
+<style>
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: silver;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+<br>
+<h3 style="font-size:70px; color: white; text-align:center"> <a href="https://www.platinumfitness.sg/copy-of-sign-up"><u>Click here to sign up today!</u></a></h3>
+<br>
+Receive 10% Discounts at all of these Merchants with Platinum Fitness Membership Perks</h3>
+<a href="https://www.facebook.com/theautobus.cc/"><img src="autobus.jpg" alt="autobus" width="100" height="50"></a><br>
+<a href="https://smoof.co/"><img src="smoof.jpg" alt="smoof" width="100" height="70"></a><br>
+<a href="http://www.wafuken.com/"><img src="wafuken.jpg" alt="wafuken" width="100" height="80"></a><br>
+<a href="https://www.facebook.com/DosirakSG/"><img src="dosirak.jpg" alt="autobus" width="100" height="80"></a><br>
+<a href="https://www.sw1clinic.com/"><img src="swone.jpg" alt="sw one clinic" width="100" height="90"></a><br>
+<a href="https://www.facebook.com/ChensMapoTofu/"><img src="chen.jpg" alt="chen mapotofu" width="100" height="100"></a><br>
+<a href="https://smooy.sg/"><img src="smooy.jpg" alt="smooy" width="100" height="80"></a> <br>
+<a href="https://www.lunarcoffeebrewers.com/"><img src="lunar.jpg" alt="lunar coffee" width="100" height="100"></a><br>
+<a href="http://www.cedelegroup.com/"><img src="cedele.jpg" alt="cedele" width="100" height="70"></a><br>
+
+</div>
+
+<div id="Trainers" class="tabcontent">
+  <h2 style="font-family: Georgia; font-size:50px" id="trainers">Helping to build a freelance community</h2>
+	<p style="font-size:30px">We want to help all freelance personal trainers find a home away from home and provide a space where your clients feel comfortable and well-served.</p>
+	<p style="font-size:30px;">We offer hourly rates to access all of our facilities at a centralised location. Join our growing community today! Get in touch for pricing details </p>
+	<address>
+	<p style="font-size:40px;"><a href="mailto:manager@platinumfitness.sg">Register your interest with us!</a></p>
+<br>
+<style>
+/* unvisited link */
+a:link {
+  color: Silver;
+}
+
+/* visited link */
+a:visited {
+  color: Silver;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: silver;
+}
+</style>
+	<p style="font-family: Georgia; font-size: 35px;">Trainers
+	<p style="font-family: Georgia; font-size: 25px"><a href= "#Jay">Jay</a> <a href="#Shayne">Shayne</a> <a href="#Teddy">Teddy</a> <a href="#Geneva">Geneva</a></p>
+	<p style="font-family: Georgia; font-size: 25px"><a href="#Clarence">Clarence</a> <a href="#Ravin">Ravin</a> <a href="#Isaiah">Isaiah</a> <a href="#Gabriel">Gabriel</a></p>
+<br>
+	<p style="font-family: Georgia; font-size: 25px" id="Jay" class="center">Jay</p>
+	<img src="jay.jpg" alt="Jay" style="width:200px; height:200px" class="center">
+	<p style="font-family: Georgia" class="center">A certified Personal Trainer and strength training aficionado who specialises in helping his clients gain strength, build muscles and achieve fat loss. A huge believer in a well-balanced lifestyle, he will help you become the strongest version of yourself.</p>
+	<br>
+	<p style="font-family: Georgia" class="center"><a href="#trainers">View other trainers</a></p>
+	<br>
+	<br>
+	<p style="font-family: Georgia; font-size: 25px" id="Shayne" class="center">Shayne</p>
+	<img src="shayne.jpg" alt="Shayne" style="width:200px; height200px" class="center">
+	<p style="font-family: Georgia" class="center">"Get Healthier. Lift Stronger. Move Easier. Be Better."<br>With this training philosophy, Shayne ensures his clients' fitness progressions are done at a safe and effective pace. Nothing confusing, only fundamentals.</p>
+	<br>
+	<p style="font-family: Georgia" class="center"><a href="#trainers">View other trainers</a></p>
+	<br>
+	<br>
+	<p style="font-family: Georgia; font-size: 25px" id="Teddy" class="center">Teddy</p>
+	<img src="teddy.jpg" alt="Teddy" style="width:200px; height:200px" class="center">
+	<p style="font-family: Georgia" class="center">A body composition coach who specializes in helping people between the ages of 40 to 60 years young work around their injuries or pain to get fitter and healthier. Tap into his 13 years of experience to discover your best way forward.</p>
+	<br>
+	<p style="font-family: Georgia" class="center"><a href="#trainers">View other trainers</a></p>
+	<br>
+	<br>
+	<p style="font-family: Georgia; font-size:25px" id="Geneva" class="center">Geneva</p>
+	<img src="geneva.jpg" alt="Geneva" style="width:200px; height:200px" class="center">
+	<p style="font-family: Georgia" class="center">Geneva specialises in S&C, weight loss, posture correction, and glutes. Having trained in classical ballet for 15 years, she has a great eye for form and posture.</p>
+	<br>
+	<p style="font-family: Georgia" class="center"><a href="#trainers">View other trainers</a></p>
+	<br>
+	<br>
+	<p style="font-family: Georgia; font-size:25px" id= "Clarence" class="center">Clarence</p>
+	<img src="clarence.jpg" alt="Clarence" style="width:200px; height:200px" class="center">
+	<p style="font-family: Georgia" class="center">A passionate and outgoing coach with over 8 years of experience, Clarence has coached numerous trainees of different profiles and is able to anticipate the fitness needs of each individual. He also specialises in buddy and group workouts.</p>
+	<br>
+	<p style="font-family: Georgia" class="center"><a href="#trainers">View other trainers</a></p>
+	<br>
+	<br>
+	<p style="font-family: Georgia; font-size:25px" id="Ravin" class="center">Ravin</p>
+	<img src="ravin.jpg" alt="Ravin" style="width:200px; height:200px" class="center">
+	<p style="font-family: Georgia" class="center">Ravin's strength lies in recognising each individual's unique abilities and building a training program that produces the best results for them. He is also a qualified Pre- and Post-natal coach.</p>
+	<br>
+	<p style="font-family: Georgia" class="center"><a href="#trainers">View other trainers</a></p>
+	<br>
+	<br>
+	<p style="font-family: Georgia; font-size:25px" id="Isaiah" class="center">Isaiah</p>
+	<img src="isaiah.jpg" alt="Isaiah" style="width:200px; height:200px" class="center">
+	<p style="font-family: Georgia" class="center">With 5 years' experience as a personal trainer, he draws his skills from his time as a competitive water polo player. Motivating in nature, he specialises in S&C, fat loss, muscle building, sports performance, and functional training.</p>
+	<br>
+	<p style="font-family: Georgia" class="center"><a href="#trainers">View other trainers</a></p>
+	<br>
+	<br>
+	<p style="font-family:Georgia; font-size:25px" id="Gabriel" class="center">Gabriel</p>
+	<img src="gabriel.jpg" alt="Gabriel" style="width:200px; height:200px" class="center">
+	<p style="font-family: Georgia" class="center">A Physiotherapist, Senior Personal Trainer, and Mentor to junior personal trainers, Gabriel possesses 14 years of knowledge and experience. With medical training in Anatomy and Biomechanics, he can help to build one's body by strengthening weak links. </p>
+	<br>
+	<p style="font-family: Georgia" class="center"><a href="#trainers">View other trainers</a></p>
+	
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h2 style="font-family:Georgia; font-size:60px; text-align:center">Where we are</h2>
+	<p style="text-align:center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8271654803666!2d103.84633334991442!3d1.2771467990639196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19256e123e1f%3A0xdc56ae1c9f4f107c!2sPlatinum%20Fitness%20Singapore!5e0!3m2!1sen!2ssg!4v1618989967857!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" float="left" class="center"></iframe></p>
+
+	<p style="font-family:Georgia; color:white; font-size:25px" class="center"><b>6A Shenton Way #B1-04/05<br>OUE Downtown Gallery<br>Singapore 068815</b></p>
+	<h3 style="font-family:Georgia; font-size:30px" class="center">Operating Hours</h3>
+	
+	<p style="font-family:Georgia; font-size:25px">Monday 7am-11pm<br>Tuesday 7am-11pm<br>Wednesday 7am-11pm<br>Thursday 7am-11pm<br>Friday 7am-11pm<br>Saturday 7am-7pm<br>Sunday 8am-4pm</p>
+	
+	<h2 style="font-family:Georgia; font-size:40px" class="center">Contact us</h2>
+	<style>
+/* unvisited link */
+a:link {
+  color: silver;
+}
+
+/* visited link */
+a:visited {
+  color: silver;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: silver;
+}
+</style>
+	<p style="font-size:36px"><a href="mailto:cs@platinumfitness.sg"><img src="email.jpg" alt="email" width="100" height="100"></a>
+	<a href="tel:+65 84455439"></a><img src="phone.jpg" alt="phone" width="100" height="100"></p>
+<a href="https://www.facebook.com/PlatinumFitnessSG""><img src="facebook.jpg" alt="Facebook" width="100" height="100"></a>
+<a href="https://www.instagram.com/platfit.sg"><img src="instagram.jpg" alt="Instagram" width="100" height="100"></a>
+
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
